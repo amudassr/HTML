@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Select in HTML
+    </title>
+</head>
+
+<body>
+
+    <!-- Select input in HTML  -->
+    <form action="/server">
+
+        <caption>
+            <h3>Registration Form</h3>
+        </caption>
+
+
+        <label for="name">Student Name</label>
+        <input type="text" placeholder="enter your email" name="std_name" id="name">
+
+        <br>
+        <br>
+
+        <label for="email">Student Email</label>
+        <input type="email" placeholder="enter your email" name="std_email" id="email">
+
+        <br>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="enter your password" name="std_password" id="password">
+
+        <br>
+        <br>
+
+        <label for="">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <br>
+        <br>
+
+        <label for="">Age:</label>
+
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I am 18+</label>
+
+        <br>
+        <br>
+
+        Choose your profession
+        <select name="course" id="course">
+            <option>Select your option</option>
+            <option value="web designing">Web Design</option>
+            <option value="web development">Web Development</option>
+            <option value="data science">Data Science</option>
+            <option value="artificial intelligence">Artificial Intelligence</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="skills">Rate your skills</label>
+        <input type="range" name="skills" id="skills" min="0" max="100" step="20">
+
+        <br>
+        <br>
+
+        <button>Submit</button>
+
+
+    </form>
+
+</body>
+
+</html>

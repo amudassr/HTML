@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project 2 - Form in HTML</title>
+    <style>
+        body {
+            background: #f4f6f8;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            /* border-radius: 10px; */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/action">
+
+        <!-- Student Registration Form  -->
+
+        <h2>Student Registration Form</h2>
+
+        <!-- Personal Information  -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="row">
+                <div>
+                    <label for="f_name">First Name</label>
+                    <input type="text" placeholder="Enter first name" id="f_name" name="f_name" required>
+                </div>
+
+                <div>
+                    <label for="l_name">Last Name</label>
+                    <input type="text" placeholder="Enter last name" id="l_name" name="l_name" required>
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="test@gmail.com" id="email" name="email">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="*****" id="password" name="password">
+
+            <label for="phone_no">Phone no</label>
+            <input type="number" placeholder="+92 34500000" id="phone_no" name="phone_no">
+
+            <label for="date_of_birth">Date of birth</label>
+            <input type="date" id="date_of_birth" name="date_of_birth">
+
+            <label for="">Gender</label>
+            <input class="inline" type="radio" name="gender"> Male
+            <input class="inline" type="radio" name="gender"> Female
+            <input class="inline" type="radio" name="gender"> Others
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational </legend>
+            <label for="">Highest Qualification</label>
+            <select name="" id="" required>
+                <option>Select</option>
+                <option value="">Matric</option>
+                <option value="">Inermediate</option>
+                <option value="">Bachelors</option>
+                <option value="">Master</option>
+            </select>
+
+            <label for="">Field of Study</label>
+            <select name="" id="">
+                <option value="">Web</option>
+                <optgroup label="Computer Science">
+                    <option value="">Web</option>
+                    <option value="">AI / ML</option>
+                    <option value="">Data Science</option>
+                </optgroup>
+
+                <optgroup label="Engineering">
+                    <option value="">Software engineering</option>
+                    <option value="">Electrical engineering</option>
+                </optgroup>
+            </select>
+
+            <label for="">Skills</label>
+            <input class="inline" type="checkbox"> HTML
+            <input class="inline" type="checkbox"> CSS
+            <input class="inline" type="checkbox"> JavaScript
+            <input class="inline" type="checkbox"> React.Js
+            <input class="inline" type="checkbox"> Node.Js
+        </fieldset>
+
+        <fieldset>
+            <legend>Uploads & Preferences</legend>
+
+            <label for="">Upload Resume</label>
+            <input type="file">
+
+            <label for="">Available Time</label>
+            <input type="time">
+
+            <label for="">Experience level (0-10)</label>
+            <input type="range" min="0" max="100" step="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="feedback">About Yourself</label>
+            <textarea name="feedback" id="feedback" placeholder="write something about you" rows="5"
+                cols="15"></textarea>
+
+            <label for=""> I agree to term and conditions</label>
+            <input class="inline" type="checkbox">
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>

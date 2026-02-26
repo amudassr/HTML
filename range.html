@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- range input element  -->
+
+    <h3>Registration Form</h3>
+
+    <form action="/server">
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter full name" name="full_name" id="name">
+
+        <br>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" name="email" id="email">
+
+        <br>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" name="password" id="password">
+
+        <br>
+        <br>
+
+
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I am 18+</label>
+
+        <br>
+        <br>
+        
+        <label for="skills">Rate your skills</label>
+        <input type="range" name="skills" id="range" min="0" max="100" step="10">
+
+        <br>
+        <br>
+
+        <label for="gender">Gender:</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+
+        <br>
+        <br>
+
+         Choose your profession
+        <select name="profession" id="profession">
+            <option>select your option</option>
+            <option value="web design">Web Design</option>
+            <option value="web design">Web Development</option>
+            <option value="graphic design">Graphic Design</option>
+            <option value="graphic design">Content Creator</option>
+        </select>
+        
+
+        <br>
+        <br>
+
+
+        <label for="feedback">Message:</label>
+        <br>
+        <textarea name="feedback" id="feedback" placeholder="Give your valuable feedback" rows="6" cols="28"></textarea>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
