@@ -1,0 +1,1 @@
+# A repository for my HTML projects, practice files, and basic web development exercises.
